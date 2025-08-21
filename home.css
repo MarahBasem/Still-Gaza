@@ -1,0 +1,45 @@
+.body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "finalbar";
+    grid-template-rows: 70px auto 100px;
+    margin: 0px;
+    padding: 0px;
+    font-family: auto;
+    font-weight: 600;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "logo sec1 button1";
+    grid-template-columns: 176px auto 190px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding-left: 40px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    grid-area: logo;
+}
+
+.sec1 {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    grid-area: sec1;
+}
+
+.button1 {
+    grid-area: button1;
+}
